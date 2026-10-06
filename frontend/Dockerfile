@@ -7,7 +7,7 @@ WORKDIR /app
 # COPY app source code
 COPY . .
 RUN npm install -D eslint@8.57.0
-npm install react@18.3.1 react-dom@18.3.1
+RUN npm install react@18.3.1 react-dom@18.3.1
 RUN rm -rf package-lock.json node_modules/
 RUN npm install
 
