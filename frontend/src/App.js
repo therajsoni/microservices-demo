@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Microservices Demo 1</h1>
+      <h1>Microservices Demo </h1>
       <h3>Auth says: {message}</h3>
       <ul>
         {data.map((d, i) => (
