@@ -4,12 +4,10 @@ FROM node:20-slim AS build
 # set working directory
 WORKDIR /app
 
-# copy requirements and install
-COPY package*.json ./
-RUN npm install
-
 # COPY app source code
 COPY . .
+RUN rm -rf package-lock.json node_modules/
+RUN npm install
 
 # build react app
 RUN npm run build
